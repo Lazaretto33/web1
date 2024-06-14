@@ -1,0 +1,13 @@
+#92abd8 // Azul grisaseo claro
+#ffffff // Blanco
+#333333 // Gris Oscuro
+#6daeff // Azul claro
+#000000 // Negro
+#2272ff // Azul Neón
+#14151b // Gris Oscuro Azulado (Fondo)
+#1f212b // Gris Claro Azulado (Header)
+
+No se vacian los campos en el formulario
+Ver si hay alguna mala practica
+preguntar sobre la linea del tiempo
+como hacer mejor el responsive

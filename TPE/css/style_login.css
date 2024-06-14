@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #14151b; /* Fondo Gris Oscuro Azulado */
+  color: #ffffff; /* Blanco */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image_container {
+  flex: 1;
+  background: url("../images/jovanilogin.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.image_container::after {
+  content: "Jovani Vazquez 'Canta Autor'";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 18px;
+  color: #ffffff; /* Blanco */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+}
+.login_form_container {
+  flex: 1;
+  background-color: #1f212b; /* Gris Claro Azulado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_form {
+  width: 80%;
+  max-width: 300px;
+}
+.login_form h2 {
+  color: #6daeff; /* Azul Claro */
+  margin-bottom: 20px;
+}
+.login_form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #333333; /* Gris Oscuro */
+  color: #ffffff; /* Blanco */
+}
+.login_form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #2272ff; /* Azul Neón */
+  color: #ffffff; /* Blanco */
+  font-size: 16px;
+  cursor: pointer;
+}
+.login_form button:hover {
+  background-color: #6daeff; /* Azul Claro */
+}
+
+.icon_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 6rem; /* Ajusta según sea necesario */
+  width: 50%;
+  max-width: 300px;
+}
+
+.icon_container:hover {
+  cursor: pointer;
+  color: #6daeff;
+}
+
+.notification {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff; /* Blanco */
+  display: none;
+}
+
+.notification.success {
+  background-color: #4caf50; /* Verde */
+}
+
+.notification.error {
+  background-color: #f44336; /* Rojo */
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 75%;
+    height: 75%;
+  }
+
+  .icon_container {
+    bottom: 10rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 70%;
+    height: 70%;
+  }
+
+  .icon_container {
+    bottom: 12rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+    height: 80%;
+    flex-direction: column;
+  }
+
+  .image_container {
+    height: 50%;
+  }
+
+  .icon_container {
+    bottom: 8rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: 90%;
+  }
+
+  .login_form {
+    width: 90%;
+  }
+
+  .icon_container {
+    bottom: 4rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .login_form {
+    width: 95%;
+  }
+
+  .icon_container {
+    bottom: 1rem;
+    width: 90%;
+  }
+}
+
+/* @media only screen and (min-width: 768px) {
+  .container {
+    width: 600px;
+    height: 500px;
+  }
+
+  .image_container::after {
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    padding: 5px px;
+  }
+
+  .login_form {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .login_form h2 {
+    margin-bottom: 20px;
+  }
+
+  .login_form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .login_form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .icon_container {
+    top: 55%;
+    width: 30%;
+    max-width: 300px;
+  }
+
+  .notification {
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}*/
+
+/* Responsive 1024px */
+/* @media only screen and (min-width: 1024px) {
+  .container {
+    width: 800px;
+    height: 500px;
+  }
+
+  .image_container::after {
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  .login_form {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .login_form h2 {
+    margin-bottom: 20px;
+  }
+
+  .login_form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .login_form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .icon_container {
+    top: 55%;
+    width: 50%;
+    max-width: 300px;
+  }
+
+  .notification {
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+} */
+
+/* Responsive 1200px */
+/* @media only screen and (min-width: 1200px) {
+  .container {
+    width: 800px;
+    height: 500px;
+  }
+
+  .image_container::after {
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+
+  .login_form {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .login_form h2 {
+    margin-bottom: 20px;
+  }
+
+  .login_form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .login_form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .icon_container {
+    top: 55%;
+    width: 50%;
+    max-width: 300px;
+  }
+
+  .notification {
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+} */

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style_login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>Jovani Vazquez | Log-in</title>
+</head>
+<body>
+  <div class="container">
+    <div class="image_container"></div>
+    <div class="login_form_container">
+        <form class="login_form" onsubmit="validateForm(event)">
+            <h2>Iniciar Sesión</h2>
+            <input id="username" type="text" placeholder="Usuario">
+            <input id="password" type="password" placeholder="Contraseña">
+            <a href="home.html" target="_blank"><button type="submit">Entrar</button></a>
+            <div class="icon_container">
+              <div>
+                <a href="https://www.facebook.com/jovanivazquezofficial/" target="_blank"><img src="images/assets/facebook_icon.svg" alt="Icono de Facebook"></a>
+              </div>
+              <div>
+                <a href="https://x.com/jovanigramvazq" target="_blank"><img src="images/assets/twitter_icon.svg" alt="Icono de Twitter "></a>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/jovanivazquez.jovaaa/" target="_blank"><img src="images/assets/instagram_icon.svg" alt="Icono de Instagram"></a>
+              </div>
+            </div>
+        </form>
+    </div>
+  </div>
+  <div id="notification" class="notification">
+  </div>
+  <script src="javascript/login.js"></script>
+</body>
+</html>

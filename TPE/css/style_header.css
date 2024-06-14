@@ -1,0 +1,128 @@
+/* Encabezado de la web */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #14151b; /* Color de fondo inicial */
+  padding: 3px 0;
+  transition: top 0.3s ease;
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+.header-hidden {
+  top: 101%; /* Oculta completamente el header al moverlo fuera de la pantalla */
+}
+
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #3498db 2px solid;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.button_user {
+  border: #2272ff 3px solid;
+  border-radius: 20px;
+  padding: 2px;
+  margin-left: 10px;
+  position: absolute; /* Posicion alineada con el menu */
+  top: 0px;
+  transform: translateY(50%);
+  left: 0px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button_user:hover {
+  border: #3498db 3px solid;
+  background: #3498db;
+  cursor: pointer;
+}
+
+.content_web {
+  padding-top: 60px; /* Ajusta el padding superior para que el contenido no quede oculto detrás del header */
+}
+
+/* Menu de navegacion */
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  margin: 0;
+}
+
+.items {
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.item_inicio,
+.item_musica,
+.item_contacto {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0px;
+  padding: 7px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.item_inicio:hover,
+.item_musica:hover,
+.item_contacto:hover {
+  color: white;
+  background: #3498db;
+}
+/* Responsive para Tablets y dispositivos de pantalla mediana */
+@media only screen and(min-widht: 768px) {
+  .header_container {
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+  .button_user {
+    left: 20px;
+  }
+  .content_web {
+    padding-top: 70px;
+  }
+  .navegation {
+    flex-direction: row;
+    gap: 30px;
+    padding: 15px;
+  }
+  .item_inicio,
+  .item_contacto,
+  .item_musica {
+    font-size: 16px;
+  }
+}
+/* Escritorios y dispositivos de pantalla grande */
+@media (min-width: 1024px) {
+  .header_container {
+    padding: 0 40px;
+  }
+
+  .button_user {
+    left: 30px;
+  }
+
+  .content_web {
+    padding-top: 80px;
+  }
+
+  .navigation {
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .item_inicio,
+  .item_musica,
+  .item_contacto {
+    font-size: 18px;
+  }
+}
